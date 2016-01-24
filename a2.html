@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tap tap bug</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+          <div class ="background">
+
+            <div id= "allcanvas">
+              <div id="start">
+                  <h1> TAP TAP BUG </h1>
+                  <form>
+                    <input id="level1" type="radio" name="level" value="l1" onclick="scorelevel1()" checked> Level 1
+                    <input id="level2" type="radio" name="level" value="l2" onclick="scorelevel2()"> Level 2
+                  </form>
+                  <div id="highscore"><h4>The High Score is: <span id="result"></span> </h4></div>
+                  <div id="startgame">  <button id="stbtn" onclick="start()" type="button"> Start </button>  </div>
+              </div>
+
+              <canvas id= "canvas1" width="400" height ="600" > </canvas><!--include UI, bugs-->
+              <canvas id= "canvas2" width="400" height ="600"> </canvas><!--include background, food-->
+
+              <div id="gameover">
+                <h1> GAME OVER! </h1>
+                <div id="report"> <h4>Your Final Score is: <span id="final"></span> </h4> </div>
+                <div id="restart">  <button id="rstbtn" onclick="restart()" type="button"> Restart </button>  </div>
+                <div id="exit">  <button id="exbtn" onclick="exit()" type="button"> Exit </button>  </div>
+            </div>
+          </div>
+
+          <div id= "info">
+            <div id="timer">Timer: <span id="countdown" >60</span> </div>
+            <div id="pause"> <button id="btn" onclick="pause()" type="button">Pause</button> </div>
+            <div id="score">Score: <span id="number">0</span></div>
+          </div>
+
+        </div>
+    <script type= "text/javascript" src="app.js">   </script>
+  </body>
+</html>
